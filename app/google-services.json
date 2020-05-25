@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1087960198677",
+    "firebase_url": "https://winged-vigil-260319.firebaseio.com",
+    "project_id": "winged-vigil-260319",
+    "storage_bucket": "winged-vigil-260319.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087960198677:android:b16c50092078967b3ce81c",
+        "android_client_info": {
+          "package_name": "tech.lucasfeitosa.fya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087960198677-6ee76ig01irkp2hd8musr365dr6nqj0v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.lucasfeitosa.fya",
+            "certificate_hash": "f17262dddee442013b5674ba247f7849e29cc277"
+          }
+        },
+        {
+          "client_id": "1087960198677-m2cju5gmlkb2rhrlq1pb4ejijm8ru496.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiZOvQLQ2hbLa5EfRRYDStYox6qhWsRuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087960198677-m2cju5gmlkb2rhrlq1pb4ejijm8ru496.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

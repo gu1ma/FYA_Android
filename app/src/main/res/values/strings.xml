@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FYA</string>
+    <string name="privacy_policy">Ao entrar você concorda com nossos <u>Termos de Serviço</u> e
+        <u>Política de
+            privacidade
+        </u>
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

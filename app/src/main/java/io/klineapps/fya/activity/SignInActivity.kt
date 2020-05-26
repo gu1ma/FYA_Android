@@ -1,10 +1,9 @@
-package tech.lucasfeitosa.fya.activity
+package io.klineapps.fya.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import tech.lucasfeitosa.fya.R
-import tech.lucasfeitosa.fya.activity.base.BaseActivity
+import io.klineapps.fya.R
+import io.klineapps.fya.activity.base.BaseActivity
 
 class SignInActivity : BaseActivity(){
 

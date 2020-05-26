@@ -1,11 +1,11 @@
-package tech.lucasfeitosa.fya.fragments
+package io.klineapps.fya.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import tech.lucasfeitosa.fya.R
+import io.klineapps.fya.R
 
 class ProfileFragment: Fragment(){
     companion object {

@@ -1,4 +1,4 @@
-package tech.lucasfeitosa.fya
+package io.klineapps.fya
 
 import org.junit.Test
 

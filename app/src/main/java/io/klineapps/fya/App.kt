@@ -1,13 +1,11 @@
-package tech.lucasfeitosa.fya
+package io.klineapps.fya
 
 import android.Manifest
 import android.app.Application
 import android.content.Context
-import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.location.Location
 import android.os.Handler
-import android.preference.PreferenceManager
 import android.util.Log
 import androidx.core.app.ActivityCompat
 
@@ -16,7 +14,6 @@ import com.google.android.gms.location.LocationRequest
 import pl.charmas.android.reactivelocation.ReactiveLocationProvider
 import rx.Observable
 import rx.android.schedulers.AndroidSchedulers
-import rx.functions.Func1
 import java.util.concurrent.TimeUnit
 
 class App : Application() {

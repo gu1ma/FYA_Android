@@ -1,22 +1,16 @@
-package tech.lucasfeitosa.fya.fragments
+package io.klineapps.fya.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SearchView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import br.com.firstdecision.cowip.util.RestClient
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.android.synthetic.main.fragment_sports_list.*
-import rx.android.schedulers.AndroidSchedulers
-import tech.lucasfeitosa.fya.R
-import tech.lucasfeitosa.fya.adapter.SportsAdapter
-import tech.lucasfeitosa.fya.model.SportResponse
+import io.klineapps.fya.R
+import io.klineapps.fya.adapter.SportsAdapter
+import io.klineapps.fya.model.SportResponse
 
 class ListSportsFragment: Fragment(){
 

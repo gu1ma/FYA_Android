@@ -1,9 +1,7 @@
-package tech.lucasfeitosa.fya.model;//
+package io.klineapps.fya.model;//
 //	SportResponse.java
 //	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
 
-import org.json.*;
-import java.util.*;
 import com.google.gson.annotations.SerializedName;
 
 

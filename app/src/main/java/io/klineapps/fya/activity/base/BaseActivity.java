@@ -1,4 +1,4 @@
-package tech.lucasfeitosa.fya.activity.base;
+package io.klineapps.fya.activity.base;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;

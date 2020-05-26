@@ -1,4 +1,4 @@
-package tech.lucasfeitosa.fya.fragments
+package io.klineapps.fya.fragments
 
 
 import android.animation.Animator
@@ -19,12 +19,10 @@ import java.lang.Exception
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.*
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.android.synthetic.main.fragment_map.*
-import tech.lucasfeitosa.fya.App
-import tech.lucasfeitosa.fya.R
-import tech.lucasfeitosa.fya.model.Sport
-import tech.lucasfeitosa.fya.model.SportResponse
-import kotlin.math.floor
+import io.klineapps.fya.App
+import io.klineapps.fya.R
+import io.klineapps.fya.model.Sport
+import io.klineapps.fya.model.SportResponse
 
 
 class MapFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener, GoogleMap.OnCameraMoveStartedListener {
@@ -93,7 +91,7 @@ class MapFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListe
     }
 
     private fun setupSportsMarkers() {
-        SportResponse.getInstance().sports.forEachIndexed { i, sport ->
+        SportResponse.getInstance().sports.forEachIndexed { _, sport ->
 
             val latitude = sport.latitude!!.toDouble()
             val longitude = sport.longitude!!.toDouble()
@@ -121,7 +119,7 @@ class MapFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListe
             coworkingLoc.latitude = co.latitude!!.toDouble()
             coworkingLoc.longitude = co.longitude!!.toDouble()
 
-            val currentLoc = Location("")
+            //val currentLoc = Location("")
         }
         p0?.showInfoWindow()
         return true

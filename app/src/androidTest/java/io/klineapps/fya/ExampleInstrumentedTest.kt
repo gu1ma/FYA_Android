@@ -1,4 +1,4 @@
-package tech.lucasfeitosa.fya
+package io.klineapps.fya
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

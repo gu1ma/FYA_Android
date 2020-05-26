@@ -1,39 +1,19 @@
-package tech.lucasfeitosa.fya.activity
+package io.klineapps.fya.activity
 
 import android.Manifest
-import android.content.Context
-import android.content.Intent
-import android.location.Location
-import android.location.LocationListener
-import android.location.LocationManager
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.SearchView
-import android.widget.TextView
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import br.com.firstdecision.cowip.util.RestClient
-import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.model.LatLng
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.tbruyelle.rxpermissions.RxPermissions
-import kotlinx.android.synthetic.main.fragment_map.*
 import rx.android.schedulers.AndroidSchedulers
-import tech.lucasfeitosa.fya.App
-import tech.lucasfeitosa.fya.fragments.ListSportsFragment
-import tech.lucasfeitosa.fya.R
-import tech.lucasfeitosa.fya.activity.base.BaseActivity
-import tech.lucasfeitosa.fya.adapter.SportsAdapter
-import tech.lucasfeitosa.fya.fragments.MapFragment
-import tech.lucasfeitosa.fya.fragments.ProfileFragment
-import tech.lucasfeitosa.fya.model.Sport
-import tech.lucasfeitosa.fya.model.SportResponse
+import io.klineapps.fya.App
+import io.klineapps.fya.fragments.ListSportsFragment
+import io.klineapps.fya.R
+import io.klineapps.fya.activity.base.BaseActivity
+import io.klineapps.fya.fragments.MapFragment
+import io.klineapps.fya.fragments.ProfileFragment
+import io.klineapps.fya.model.SportResponse
 
 class MainActivity : BaseActivity() {
 

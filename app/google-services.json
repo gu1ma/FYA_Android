@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1087960198677:android:b16c50092078967b3ce81c",
         "android_client_info": {
-          "package_name": "tech.lucasfeitosa.fya"
+          "package_name": "io.klineapps.fya"
         }
       },
       "oauth_client": [

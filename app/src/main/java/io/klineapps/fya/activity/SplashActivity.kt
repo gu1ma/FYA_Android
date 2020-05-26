@@ -1,10 +1,10 @@
-package tech.lucasfeitosa.fya.activity
+package io.klineapps.fya.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import tech.lucasfeitosa.fya.R
+import io.klineapps.fya.R
 
 class SplashActivity : AppCompatActivity() {
 

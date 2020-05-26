@@ -1,15 +1,14 @@
-package tech.lucasfeitosa.fya.adapter
+package io.klineapps.fya.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import tech.lucasfeitosa.fya.App
-import tech.lucasfeitosa.fya.R
-import tech.lucasfeitosa.fya.model.Sport
+import io.klineapps.fya.App
+import io.klineapps.fya.R
+import io.klineapps.fya.model.Sport
 
 class SportsAdapter (private val sports:Array<Sport>):RecyclerView.Adapter<SportsAdapter.SportsViewHolder>(){
     override fun getItemCount(): Int {

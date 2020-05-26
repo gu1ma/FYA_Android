@@ -19,7 +19,7 @@ Follow the steps to start the application on you environment:
   * 1.0.0
     * User Sign Up.
     * User Sign In implemented with session and logout.
-    * Sports Sing Up 
+    * Sports Sign Up 
   
 ## Technologies:
    **Java, Kotlin, Gradle, Android Studio, Retrofit**
@@ -29,5 +29,5 @@ Follow the steps to start the application on you environment:
 
 ![](/images/git.png)
 
-Desenvolvido por KLineApps.
+Developed by KLineApps.
 

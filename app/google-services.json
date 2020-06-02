@@ -18,7 +18,7 @@
           "client_id": "1087960198677-6ee76ig01irkp2hd8musr365dr6nqj0v.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "tech.lucasfeitosa.fya",
+            "package_name": "io.klineapps.fya",
             "certificate_hash": "f17262dddee442013b5674ba247f7849e29cc277"
           }
         },

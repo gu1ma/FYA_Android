@@ -2,6 +2,7 @@ package io.klineapps.fya.activity
 
 import android.Manifest
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import br.com.firstdecision.cowip.util.RestClient
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -19,18 +20,18 @@ class MainActivity : BaseActivity() {
 
     private var bottomNavigation:BottomNavigationView? = null
     private var listFragment = ListSportsFragment()
-    private var mapFragment = MapFragment()
+    //private var mapFragment = MapFragment()
     private var profileFragment = ProfileFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        bottomNavigation = findViewById(R.id.bottom_navigation);
+        bottomNavigation = findViewById(R.id.bottom_navigation)
 
-        getSports()
+        //getSports()
         setupPermissions()
-
+        setupFragments()
 
         bottomNavigation?.setOnNavigationItemSelectedListener { item ->
             hideAllFragments()
@@ -39,7 +40,7 @@ class MainActivity : BaseActivity() {
                     showFragment(listFragment)
                 }
                 R.id.nav_map -> {
-                   showFragment(mapFragment)
+                   //showFragment(mapFragment)
                 }
                 R.id.nav_profile -> {
                     showFragment(profileFragment)
@@ -65,39 +66,38 @@ class MainActivity : BaseActivity() {
             })
     }
 
-    private fun getSports(){
-
-        showProgressDialog(this,"Aguarde")
-        RestClient.get()!!.getCoworkings()
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe({ response ->
-                dismissProgressDialog()
-                if (response.isSuccessful) {
-                    response.body()?.let {
-                        println(it.sports[0].address)
-                        SportResponse.getInstance().sports = it.sports
-                        setupFragments()
-                    }
-
-                }
-            }, { error ->
-                dismissProgressDialog()
-                error.printStackTrace()
-            })
-    }
+//    private fun getSports(){
+//
+//        showProgressDialog(this,"Aguarde")
+//        RestClient.get()!!.getCoworkings()
+//            .observeOn(AndroidSchedulers.mainThread())
+//            .subscribe({ response ->
+//                dismissProgressDialog()
+//                if (response.isSuccessful) {
+//                    response.body()?.let {
+//                        println(it.sports[0].address)
+//                        SportResponse.getInstance().sports = it.sports
+//                        //setupFragments()
+//                    }
+//
+//                }
+//            }, { error ->
+//                dismissProgressDialog()
+//                error.printStackTrace()
+//            })
+//    }
 
     private fun setupFragments(){
         addFragment(listFragment)
-        addFragment(mapFragment)
-        hideFragment(mapFragment)
+        //addFragment(mapFragment)
         addFragment(profileFragment)
+        //hideFragment(mapFragment)
         hideFragment(profileFragment)
     }
 
     private fun showFragment(fragment: Fragment){
         supportFragmentManager
-            .beginTransaction()
-            .show(fragment)
+            .beginTransaction().show(fragment)
             .commit()
     }
 
@@ -110,7 +110,7 @@ class MainActivity : BaseActivity() {
 
     private fun hideAllFragments(){
         hideFragment(listFragment)
-        hideFragment(mapFragment)
+        //hideFragment(mapFragment)
         hideFragment(profileFragment)
     }
 

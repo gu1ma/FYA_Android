@@ -22,6 +22,7 @@ class App : Application() {
     private var handler = Handler()
     private var location: Location? = null
 
+
     // Called when the application is starting, before any other application objects have been created.
     override fun onCreate() {
         super.onCreate()
